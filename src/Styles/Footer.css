@@ -1,0 +1,54 @@
+.footer {
+    background-color: #343a40; /* Dark background for contrast */
+    color: #fff; /* Light text for readability */
+    padding: 30px 0; /* Generous padding for aesthetics */
+    text-align: center; /* Center align all text */
+  }
+  
+  .footer-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content */
+    margin-bottom: 20px; /* Space between container and bottom text */
+  }
+  
+  .footer-content {
+    margin-bottom: 15px; /* Space below footer content */
+  }
+  
+  .footer-content h3 {
+    margin-bottom: 10px; /* Space below heading */
+    font-weight: bold; /* Bold heading */
+  }
+  
+  .footer-description {
+    margin-bottom: 10px; /* Spacing for description */
+  }
+  
+  .contact-info p {
+    margin: 5px 0; /* Uniform spacing for contact info */
+  }
+  
+  .social-links {
+    margin: 10px 0; /* Spacing for social links */
+  }
+  
+  .social-links a {
+    margin: 0 10px; /* Spacing between icons */
+    color: #fff; /* Default icon color */
+    font-size: 24px; /* Larger icons for visibility */
+  }
+  
+  .social-links a:hover {
+    color: #007bff; /* Color on hover */
+  }
+  
+  .footer-bottom {
+    background-color: #212529; /* Darker bottom bar */
+    padding: 10px 0; /* Padding for the bottom */
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0; /* Uniform spacing for footer bottom paragraphs */
+  }
+  

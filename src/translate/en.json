@@ -1,0 +1,91 @@
+{
+
+  "home": "Home",
+  "aboutUs": "AboutUs",
+  "donate": "Donate",
+  "steps": "Steps",
+  "events": "Events",
+  "contact": "Contact",
+  "join": "Join Dakshina Kannada's Fundraising Journey!",
+  "joinDescription": "Be the change maker",
+    
+    "whyCrowd":"WHY CROWDFUNDING?",
+    "impactBorders": "Impact Beyond Borders",
+    "impactBordersDescription": "Make a direct impact in the community. Your contribution isn’t just a number; it transforms lives in schools, reaching students in need. Together, we deliver support where it matters most.",
+    "impowering": "Empowering Dreams",
+    "impoweringDescription": "Help build futures, not just buildings. Join a mission that goes beyond donations. Your support gives children the tools, knowledge, and encouragement to unlock their potential and succeed.",
+    "seeSupport": "See Your Support in Action",
+    "seeSupportDescription": "Total transparency from start to success. See how every cent of your generosity creates impact. Your involvement is fully accounted for, keeping you connected to the difference you’re making.",
+    "invest": "Invest in a Brighter Tomorrow",
+    "investDescription": "Today’s contribution shapes tomorrow’s leaders. By investing in education now, you create ripples of change that extend into the future. Let’s build a legacy that inspires progress for generations to come.",
+ 
+
+    "portfolio": "Education Portfolio",
+    "portfolioDescription":"Displaying educational institutes of Dakshina Kannada segregated by blocks.",
+    "allZones": "ALL ZONES",
+    "bantwal": "BANTWAL",
+    "belthangady": "BELTHANGADY ",
+    "mangaloreNorth": " MANGALORE NORTH ",
+    "mangaloreSouth": "MANGALORE SOUTH",
+    "moodabidre": "MOODABIDRE ",
+    "puttur": "PUTTUR ",
+    "sullia":"SULLIA",
+
+    
+    "stepsTitle": "Steps to Follow to Raise Funds",
+    "followSteps": "Follow the below steps to raise funds",
+    "selectSchool": "Select a School",
+    "selectSchoolDesc": "Browse through the list of schools displayed on the website and choose the school you want to support.",
+    "chooseQuantity": "Choose Quantity & Fill Details",
+    "chooseQuantityDesc": "Select the quantity of the items you wish to donate. Then, fill in your details like name, phone number, and other necessary information to proceed.",
+    "confirmOTP": "Confirm Donation via OTP",
+    "confirmOTPDesc": "After submitting the form, you will receive an OTP on your phone. Enter the OTP to confirm your donation. Once confirmed, expect a call from the school’s headmaster or the BEO to finalize the next steps of the donation process.",
+
+
+    "eventsDK": "Events of Dakshina Kannada",
+    "eventsDKT": "Tradition of Dakshina Kannada",
+    "eventsDK1": "Kola",
+    "eventsDK2": "Kambla",
+    "eventsDK3": "Daff",
+    "eventsDK4": "Saraswathi",
+    "eventsDK5": "Christmas",
+
+
+    "faq": "Frequently Asked Questions",
+    "faq1": "How can I support a school's project?",
+    "faq1Answer": "Supporting a project is simple! Browse through our list of schools and their unique initiatives. Once you find a project that resonates with you, click the ‘Donate Now’ button and follow the easy steps to make your contribution.",
+    "faq2": "Is there a minimum donation ?",
+    "faq2Answer": "There’s no set minimum! Every contribution, no matter the size, makes a difference. Donate as much as you’re comfortable with and witness the change it brings.",
+    "faq3": "Where does my donation go?",
+    "faq3Answer": "Your donation goes directly to the school you choose. You can personally deliver the product to the school, or you may opt for assistance from our team to ensure it reaches its destination smoothly.",
+    "faq4": "Can I donate anonymously?",
+    "faq4Answer": "Absolutely! You can choose to remain anonymous if you prefer to keep your support private. Your generosity will still make a lasting impact.",
+    "faq5": "Is the donation process secure?",
+    "faq5Answer": "Yes, we ensure the highest level of security. Our platform is designed to protect your personal information, ensuring that your donations are safely transferred to the schools.",
+    "faq6": "Will I receive a certificate for my donation?",
+    "faq6Answer": "Yes! As a token of appreciation, we will provide you with a certificate for your generosity. You can also check our list of completed projects to see the real impact your contribution has made.",
+    "faq7": "Can I support multiple projects?",
+    "faq7Answer": "Of course! You’re welcome to contribute to as many projects as you like. Simply choose the initiatives that resonate with you, and make a donation to each one.",
+    "faq8": "How can I be sure the projects are legitimate?",
+    "faq8Answer": "The portal is supported and facilitated by the Dakshina Kannada District Administration. We follow a rigorous system of checks and balances to ensure that every project listed is genuine and worthy of your support.",
+
+
+    "contactUs": "CONTACT US",
+    "ourAddress": "Our Address",
+    "addressDDPI": "DDPI Dakshina Kannada, Kottara, Mangaluru, Karnataka 575006, India",
+    "emailUs": "Email Us",
+    "email": "ddpidk@gmail.com",
+    "callUs": "Call Us",
+    "number": "+91 9448999337",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "subject": "Subject",
+    "message": "Message",
+    "sendMessage": "Send Message",
+    "messageCannot": "Message cannot exceed 1000 characters.",
+    "areYouSure": "Are you sure you want to send this message?"
+
+
+    
+  }
+  

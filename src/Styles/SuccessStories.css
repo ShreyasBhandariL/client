@@ -1,0 +1,49 @@
+
+.card {
+    position: relative;
+    perspective: 1500px; /* Set perspective for 3D effect */
+    transition: transform 0.5s ease; /* Smooth transition for transform */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-hover:hover .card-front {
+    transform: rotateY(180deg); /* Flip the card on hover */
+}
+
+.card-front, .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg); /* Initially hide the back of the card */
+    background-color: #fff; /* Background color for the back side */
+    color: #333; /* Text color for the back side */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.text-body-primary {
+    color: #6c757d; /* Adjust text color as needed */
+}
+
+.text-body-secondary {
+    color: #6c757d; /* Adjust text color as needed */
+}
+  

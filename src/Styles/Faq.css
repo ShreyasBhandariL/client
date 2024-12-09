@@ -1,0 +1,28 @@
+.accordion-item {
+    margin-bottom: 1rem;
+  }
+  
+  .accordion-button {
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .accordion-body {
+    padding: 1rem;
+    background-color: #f7f7f7;
+  }
+  
+  .accordion-collapse {
+    height: 0; /* Hidden by default */
+    overflow: hidden;
+    transition: height 9.1s ease-out; /* Smooth transition for both open and close */
+  }
+  
+  .accordion-collapse.show {
+    height: auto; /* Adjust to fit content */
+  }
+  

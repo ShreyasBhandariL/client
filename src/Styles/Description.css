@@ -1,0 +1,436 @@
+/* Jump animation for floating icon */
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* Adjust the height of the jump */
+  }
+}
+
+/* Rotate animation for share icon */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Slide-up animation for share options */
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%); /* Start above the icon */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Move into place */
+    opacity: 1;
+  }
+}
+
+/* Floating share icon styling */
+.floating-share-icon {
+  position: fixed;
+  bottom: 20px; /* Adjust based on your layout */
+  right: 20px; /* Adjust based on your layout */
+  z-index: 1000;
+  cursor: pointer;
+  animation: jump 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Share icon with continuous rotation */
+.share-icon {
+  background-color: #007bff; /* Primary color */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Adjust size */
+  height: 60px; /* Adjust size */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  animation: rotate 3s linear infinite; /* Continuous rotation */
+}
+
+.share-icon:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Share options hidden initially with slide-up animation */
+.share-options {
+  background-color: #e7f0ff; /* Light blue background */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+  position: absolute; /* Use absolute positioning */
+  bottom: 110%; /* Position above the icon */
+  right: 0; /* Align with the icon */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Slightly below its final position */
+  transition: transform 0.4s ease, opacity 0.4s ease; /* Transition for smooth animation */
+}
+
+/* When the share options are visible */
+.share-options.show {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Move into place */
+  animation: slideUp 0.4s ease-out; /* Animate on show */
+}
+
+/* Layout for icons inside share options */
+.share-options .d-flex {
+  display: flex;
+  flex-direction: column; /* Stack icons vertically */
+  align-items: center; /* Center the icons */
+  gap: 10px; /* Space between icons */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+  .floating-share-icon {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .share-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Default styles for larger screens */
+.successimage {
+  width: 100%;
+  height: auto;
+}
+
+.successimage img {
+  width: 100%;
+  height: auto;
+  max-height: 640px;
+  object-fit: contain;
+}
+
+/* Responsive styles for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .successimage img {
+    max-height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+/* Additional adjustments for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .successimage img {
+    margin-top: 0px;
+    max-height: 500px; /* Further reduce height for extra small screens */
+  }
+}
+
+
+.dt{
+  border:2px solid black; 
+  border-collapse: collapse;
+  text-align: center;
+}
+th,td{
+  border: 2px solid black;
+}
+th{
+  background-color: aliceblue ;
+}
+
+/* Modal background */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Modal dialog */
+.modal-dialog {
+  margin: 100px auto 0; /* Set top margin to 100px and auto for left/right */
+  max-width: 500px; /* Limit width */
+  width: 80%; /* Responsive width */
+}
+
+.modal-dialog-otp {
+  margin: 300px auto 0; /* Set top margin to 100px and auto for left/right */
+  max-width: 500px; /* Limit width */
+  width: 80%; /* Responsive width */
+}
+
+.modal-content-otp {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center; /* Center content */
+  align-items: center;
+  width: 100%; /* Full width */
+}
+.modal-title {
+  font-size: 2rem; /* Desired font size */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center text */
+  flex-grow: 1;
+}
+
+/* Close button */
+.btn-close {
+  color: #aaa;
+  cursor: pointer;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  color: black; /* Change color on hover */
+}
+
+
+/* Form styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal form button {
+  border-radius: 10px;
+}
+
+.large-image {
+width: 100%;
+height: 100vh; 
+object-fit: cover; 
+object-position: center; 
+padding: 0px;
+}
+
+
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+
+.btn-donate-now{
+background-color: #98c2e9;
+color: var(--contrast-color);
+border-radius: 30px;
+padding: 8px 30px;
+border: 2px solid transparent;
+transition: 0.3s all ease-in-out;
+font-size: 14px;
+}
+
+.btn-donate-now:hover {
+border-color: #3e5e7c;
+background-color:  #99ceff;
+color: var(--accent-color);
+}
+
+.about h1 {
+color: var(--heading-color);
+font-size: 30px;
+}
+
+.about p {
+line-height: 1.7;
+color: var(--default-color);
+}
+
+.about .swiper-pagination {
+position: absolute;
+bottom: 30px;
+}
+
+.about .swiper-pagination .swiper-pagination-bullet {
+margin: 0 5px;
+background: #ffffff;
+opacity: 0.3;
+}
+
+.about .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+background: var(--accent-color);
+opacity: 1;
+}
+
+.about .section-subtitle {
+font-size: 15px;
+margin-bottom: 10px;
+display: block;
+color: var(--default-color);
+}
+
+.carousel-inner{
+padding: 50px;
+}
+
+.funds{
+background-color: antiquewhite;
+}
+
+.service-item{
+width: 300px;
+height: auto;
+padding: 10px;
+border-radius: 10px;
+background-color: rgb(155, 132, 101);
+margin: 20px;
+display: inline-block;
+}
+
+
+.modal-open {
+overflow: hidden;
+}
+
+
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; /* High z-index to ensure it's on top */
+}
+
+.modal-dialog {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 1060;
+}
+
+.modal-body {
+  max-height: 70vh; /* Limit height of modal body */
+  overflow-y: auto; /* Scroll inside the modal body if needed */
+}
+
+.service-item {
+  max-height: 100px; /* Limit the height when collapsed */
+  transition: max-height 0.3s ease-in-out; /* Smooth transition */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.service-item.expanded {
+  max-height: 500px; /* Allow expansion to a larger height */
+}
+
+.plus , .minus{
+  height: 40px;
+}
+
+
+
+  .title-section {
+    padding: 50px 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 80px 0 0; /* Spacing between sections */
+    position: relative; /* Allows absolute positioning for the pseudo-element */
+    overflow: hidden; /* Prevents overflow for the pseudo-element */
+    animation: slideIn 0.5s forwards; /* Apply slide-in animation */
+    background-image: url("../assets/img/home/pencil.jpg"); /* Set the background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: 50% 70%; /* Center the image */
+    color: white; /* Change text color for better visibility */
+  }
+  .title {
+    color: black; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    margin: 0; /* Removes default margin */
+  }
+  .title-section h1 {
+    font-weight: bold; /* Make text bold */
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+      1px 1px 0 white; /* Create a white border effect around the text */
+
+    padding: 10px; /* Padding around text for better spacing */
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%); /* Start from the left */
+      opacity: 0; /* Start fully transparent */
+    }
+    to {
+      transform: translateX(0); /* End at the original position */
+      opacity: 1; /* End fully opaque */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .title-section {
+      padding: 20px 10px; /* Reduced padding for smaller screens */
+      min-height: 10vh; /* Adjust minimum height */
+      margin: 70px 0 0; /* Adjust margin for smaller screens */
+    }
+
+    .title {
+      font-size: 1.5rem; /* Adjust title font size for better readability */
+    }
+  }
+
+
+

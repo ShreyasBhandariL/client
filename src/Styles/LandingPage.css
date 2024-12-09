@@ -1,0 +1,72 @@
+#LandingPage {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  margin-bottom: -90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.LandingPage-text-container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: #fff;
+}
+
+
+.LandingPage-text-container h1 {
+font-size: 4.5rem;
+margin-bottom: 50;
+}
+
+.LandingPage-text-container h2 {
+font-size: 2rem;
+font-weight: 400;
+margin-top: 20px;
+}
+
+
+
+#LandingPage .btn-get-started {
+  font-size: 36px;
+  display: inline-block;
+  padding: 4px 0;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  margin: 10px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#LandingPage .btn-get-started:hover {
+  padding-top: 8px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 1024px) {
+  #LandingPage {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #LandingPage h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #LandingPage h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
