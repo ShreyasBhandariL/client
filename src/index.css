@@ -4635,7 +4635,7 @@ fieldset:disabled .btn {
 
 .navbar-nav-scroll {
   max-height: var(--bs-scroll-height, 75vh);
-  overflow-y: auto
+  overflow-y: hidden;
 }
 
 @media (min-width:576px) {
@@ -4658,7 +4658,7 @@ fieldset:disabled .btn {
   }
 
   .navbar-expand-sm .navbar-nav-scroll {
-    overflow: visible
+    overflow: hidden;
   }
 
   .navbar-expand-sm .navbar-collapse {
@@ -4691,7 +4691,7 @@ fieldset:disabled .btn {
     display: flex;
     flex-grow: 0;
     padding: 0;
-    overflow-y: visible
+    overflow-y: hidden
   }
 }
 
@@ -4715,7 +4715,7 @@ fieldset:disabled .btn {
   }
 
   .navbar-expand-md .navbar-nav-scroll {
-    overflow: visible
+    overflow: hidden
   }
 
   .navbar-expand-md .navbar-collapse {
@@ -4748,7 +4748,7 @@ fieldset:disabled .btn {
     display: flex;
     flex-grow: 0;
     padding: 0;
-    overflow-y: visible
+    overflow-y: hidden
   }
 }
 
@@ -4772,7 +4772,7 @@ fieldset:disabled .btn {
   }
 
   .navbar-expand-lg .navbar-nav-scroll {
-    overflow: visible
+    overflow: hidden
   }
 
   .navbar-expand-lg .navbar-collapse {
@@ -4805,7 +4805,7 @@ fieldset:disabled .btn {
     display: flex;
     flex-grow: 0;
     padding: 0;
-    overflow-y: visible
+    overflow-y: hidden
   }
 }
 
@@ -4829,7 +4829,7 @@ fieldset:disabled .btn {
   }
 
   .navbar-expand-xl .navbar-nav-scroll {
-    overflow: visible
+    overflow: hidden
   }
 
   .navbar-expand-xl .navbar-collapse {
@@ -4862,7 +4862,7 @@ fieldset:disabled .btn {
     display: flex;
     flex-grow: 0;
     padding: 0;
-    overflow-y: visible
+    overflow-y: hidden
   }
 }
 
@@ -4886,7 +4886,7 @@ fieldset:disabled .btn {
   }
 
   .navbar-expand-xxl .navbar-nav-scroll {
-    overflow: visible
+    overflow: hidden
   }
 
   .navbar-expand-xxl .navbar-collapse {
@@ -4919,7 +4919,7 @@ fieldset:disabled .btn {
     display: flex;
     flex-grow: 0;
     padding: 0;
-    overflow-y: visible
+    overflow-y: hidden
   }
 }
 
@@ -4942,7 +4942,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-expand .navbar-nav-scroll {
-  overflow: visible
+  overflow: hidden
 }
 
 .navbar-expand .navbar-collapse {
@@ -4975,7 +4975,7 @@ fieldset:disabled .btn {
   display: flex;
   flex-grow: 0;
   padding: 0;
-  overflow-y: visible
+  overflow-y: hidden
 }
 
 .navbar-dark,
